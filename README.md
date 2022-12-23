@@ -22,7 +22,7 @@ There are two ways to access the other array. When your A array is playing and y
 
 There is a simple onboard delay which can be tempo synced on the first page. There are more controls on the second page listed as Volumes. You can control the delay feedback and time on this page. There are controls for the master volume and delay volume on a different page.
 
-# Volume control
+# Controlling the volume
 
 I like to leave the Input and Recycle volumes at about 75% to get slight lowering in volume as more layers are added. If you mess up and accidentally record too low, you can find the master volume on a different page. There is also a momentary kill switch on the low C for quick rhythmic muting.
 
