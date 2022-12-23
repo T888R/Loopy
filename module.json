@@ -1,0 +1,38 @@
+{
+    "display" : "Loopy",
+    "parameters" :  [ 
+        ["pct","ol_ilevel","Input Level",0,100,75],
+        ["pct","ol_rlevel","Recycle Level",0,100,75],
+        ["time","ol_delay","Delay Time",10,1000,10],
+        ["pct","ol_feedback","Feedback",0,100,0],
+        ["int","a_length","A Length",1,64,16],
+        ["int","b_length","B Length",1,64,16],
+        ["bool","temposync","Tempo Sync",0,1,0],
+        ["bool","monitor","Monitor",0,1,0],
+        ["int","channel","MIDI Channel",1,16,2],
+        ["int","rec_cc","Record CC",0,127,16],
+        ["int","cleara_cc","Clear A CC",0,127,17],
+        ["int","clearb_cc","Clear B CC",0,127,21],
+	    ["int","quantstart_cc","Start CC",0,127,18],
+	    ["int","quantstop_cc","Stop CC",0,127,19],
+        ["int","ab_cc","AB Switch CC",0,127,22],
+        ["int","abrec_cc","AB Rec CC",0,127,20],
+	    ["int","counter_cc","Counter CC",0,127,28],
+	    ["int","recind_cc","Rec Indicator",0,127,29],
+        ["pct","mastervol","Master Vol",0,200,100],
+        ["pct","delayvol","Delay Vol",0,100,100],
+        ["int","samp_src","Sample Source",-1,27,-1],
+        ["float","samp_select","Sample Select",0,1,0],
+        ["int","samp_array","Sample Array",0,1,0]
+    ],
+    "pages" : [ 
+        ["pg_aux","Recording",["a_length","b_length","temposync","monitor"]],
+	    ["pg_main","Volumes",["ol_ilevel","ol_rlevel","ol_delay","ol_feedback"]],
+        ["pg_midi","MIDI",["channel","rec_cc","cleara_cc","clearb_cc"]],
+	    ["pg_midii","MIDI 2",["quantstart_cc","quantstop_cc","counter_cc","recind_cc"]],
+        ["pg_xtra","Extra",["ab_cc","abrec_cc","mastervol","delayvol"]],
+        ["pg_samp","Sample",["samp_src","samp_select","samp_array"]],
+        ["pg_levels","Levels",[""]]
+    ]
+}
+
